@@ -403,7 +403,7 @@ section>p {
 }
 
 .about>p {
-  color: #ecdcc0;
+  color: white;
   width: 90%;
   line-height: 1.5em;
   font-size: 15px;
@@ -658,6 +658,9 @@ ul {
       margin-top: 1em;
       width: 100%;
     }
+    .proj>h1{
+      font-size: 20px;
+    }
 
     .projimg {
       background-image: url(images/proj1img.png);
@@ -677,3 +680,39 @@ ul {
       -o-border-radius: 1em;
     }
   }
+  .contact{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color:  rgb(15, 15, 15);
+height: 7em;
+border-radius: 1.5em;
+-webkit-border-radius: 1.5em;
+-moz-border-radius: 1.5em;
+-ms-border-radius: 1.5em;
+-o-border-radius: 1.5em;
+border: 1px solid black;
+padding: 1em;
+  }
+  .contact:hover{
+    border: 1px solid  rgb(15, 15, 15);
+    background-color: #070707;
+  }
+  .contblock{
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact h2,h3,img{
+    color: white;
+  }
+  footer>h3{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+.span1{
+  border-bottom: 1px solid  #6001FF ;
+}
+.span2{
+  color: #6001FF;
+}
