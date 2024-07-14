@@ -46,6 +46,7 @@ main::-webkit-scrollbar {
 }
 
 nav {
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,7 +117,12 @@ ul>li>a:hover{
   color: #6001FF;
 
 }
+nav:hover {
+  background-color: rgb(7, 7, 7);
+  border: 1px solid rgb(15, 15, 15);
+}
 header {
+  border: 1px solid black;
   margin-top: 1em;
   height: 70px;
   display: flex;
@@ -140,9 +146,15 @@ header>h2 {
 header>h1 {
   color: white;
   font-size: 20px;
+  width: 10em;
+  cursor: pointer;
 }
 header>h1:hover{
   color: #6001FF;
+}
+header:hover {
+  background-color: rgb(7, 7, 7);
+  border: 1px solid rgb(15, 15, 15);
 }
 
 .invert {
@@ -150,6 +162,8 @@ header>h1:hover{
 }
 
 section {
+  position: relative;
+  border: 1px solid black;
   padding-top: 1.9em;
   padding-bottom: 1.9em;
   padding-left: 1em;
@@ -167,10 +181,92 @@ section {
   align-items: center;
   height: auto;
 }
-
+#hs{
+  filter: saturate(2);
+  -webkit-filter: saturate(2);
+}
+.svg1{
+  position: absolute;
+  left: -2%;
+  transform: rotate(-25deg);
+  z-index: -0;
+ 
+}
+.svg2{
+  position: absolute;
+  bottom: 15%;
+  left: -3%;
+  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  z-index: -0;
+}
+.svg3{
+  position: absolute;
+  bottom: 45%;
+  left:20%;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  z-index: -0;
+}
+.svg4{
+  position: absolute;
+  top: 3%;
+  right:25%;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  z-index: -0;
+}
+.svg5{
+  position: absolute;
+  top: 25%;
+  right:10%;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  z-index: -0;
+}
+.svg6{
+  position: absolute;
+  bottom: 3%;
+  right:2%;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  z-index: -0;
+}
+@media (max-width:810px) {
+  #hs{
+    left:-1000%
+  }
+}
+.hero{
+  z-index: 1;
+  background-color: rgb(15, 15, 15);
+}
 .mypiclogo {
   border: 2px dotted #6001FF;
   position: relative;
+  background-color: rgb(15, 15, 15);
+}
+section:hover>.hero{
+  background-color: rgb(7, 7, 7);
+}
+section:hover>.mypiclogo{
+  background-color: rgb(7, 7, 7);
+
 }
 
 .hero>.mypiclogo>img {
@@ -230,6 +326,10 @@ section>p {
   margin-top: 1em;
   color: rgba(255, 255, 255, 0.582);
   font-size: 15px;
+}
+section:hover {
+  background-color: rgb(7, 7, 7);
+  border: 1px solid rgb(15, 15, 15);
 }
 
 .section2 {
