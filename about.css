@@ -86,6 +86,7 @@
   }
   .navlist>ul>li{
     text-align: center;
+    list-style: none;
     margin: 1em;
   }
   ul>li>a{
@@ -207,4 +208,18 @@
         width: 100%;
     }
    
+}
+footer>h3 {
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.span1 {
+  border-bottom: 1px solid #6001FF;
+}
+
+.span2 {
+  color: #6001FF;
 }

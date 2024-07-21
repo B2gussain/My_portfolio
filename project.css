@@ -330,3 +330,17 @@
     /* border: 1px solid transparent; */
   } 
 }
+footer>h3 {
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.span1 {
+  border-bottom: 1px solid #6001FF;
+}
+
+.span2 {
+  color: #6001FF;
+}
