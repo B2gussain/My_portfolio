@@ -1,0 +1,394 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: monospace;
+  }
+  body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  main {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main::-webkit-scrollbar {
+    display: none;
+  }
+  
+  nav {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    /* height: 55px; */
+    min-height: 55px;
+    padding-top: 0.5em;
+    background-color:#0F0F0F;
+    width: 90vw;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+    padding-left: 1em;
+    padding-right: 1.3em;
+  }
+  .navshow{
+    /* padding-top: 0.5em; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+  }
+  nav img {
+    height: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  nav>.navshow >.icon>.menu{
+  display: block;
+  }
+  nav>.navshow>.icon>.cross{
+    display: none;
+  }
+  .navlist{
+    /* margin-top: 0.5em; */
+    padding-bottom: 0.5em;
+    width: 100%;
+    border-top: 2px solid rgba(255, 255, 255, 0.048);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    display: none;
+  }
+  .navlist>ul>li{
+    text-align: center;
+    margin: 1em;
+    list-style: none;
+  }
+  ul>li>a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+  ul>li>a:hover{
+    color: #6001FF;
+  
+  }
+  nav:hover {
+    background-color: rgb(7, 7, 7);
+    border: 1px solid rgb(15, 15, 15);
+  }  
+  .skill{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 90vw;
+    /* height: auto; */
+    background-color: rgb(15, 15, 15);
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: 1px solid black;
+}
+.skill:hover {
+  background-color: rgb(7, 7, 7);
+  border: 1px solid rgb(15, 15, 15);
+}  
+  .skill>h1{
+    color: white;
+    margin-top: 1em;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+  .skill>h1:hover{
+    color: #560ada;
+  }
+  .skill_block{
+    /* margin-top: 0.7em; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: transparent;
+    /* height: 70vh; */
+    width: 100%;
+    margin-bottom: 3.5em;
+  }
+  .left{
+    /* height: 100%; */
+    width: 48%;
+    background-color:transparent;
+    /* border: 1px solid white ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skillbar-wrapper {
+    height: 100%;
+    margin: 1.5em auto;
+    /* max-width: 960px;   */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+  
+  .skillbar {
+    position:relative;
+    margin-bottom: 15px;
+    width: 90%;
+    /* background: #eee; */
+    height: 1em;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+  
+  .skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:1.5em;
+    height: 0.85em;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    /*border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    */margin: 0;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+  
+  .skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height:0.9em;
+    line-height: 50px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+  
+  .skillbar-bar {
+    border-radius: 2em;
+    height: 1em;
+    width: 0%;
+    border-radius: 2em;
+    transition: 500ms linear;
+    transition-property: width, background-color;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 15px;
+    height: 1px;
+    line-height: 50px;
+    border-radius: 2em;
+    color: rgba( 0, 0, 0, 0.4 );
+    transition: color 500ms ease-out;
+}
+  
+  .complete .skill-bar-percent {
+    color: #fff;
+  }
+  
+  .complete.server .skill-bar-percent {
+    color: #333;
+  }
+  
+  .html .skillbar-title {
+    background: #FF3700;  
+  }
+  
+  .html .skillbar-bar {
+    background: #FF5600;  
+  }
+  
+  
+  .css .skillbar-title {
+    background: #2980b9;  
+  }
+  
+  .css .skillbar-bar {
+    background: #3498db;  
+  }
+  
+  .javascript .skillbar-title {
+    background: #dbca07;
+  }
+  .javascript .skillbar-bar {
+    background: #FFE800;
+  }
+  
+  .tailwind .skillbar-title {
+    background: #06c0e0;  
+  }
+  
+  .tailwind .skillbar-bar {
+    background: #00D7FF;  
+  }
+  
+  .bootstrap .skillbar-title {
+    background: #560ada;  
+  }
+  
+  .bootstrap .skillbar-bar {
+    background: #6001FF;  
+  }
+  
+  .nodejs .skillbar-title {
+    background: #90ca13;  
+  }
+  
+  .nodejs .skillbar-bar {
+    background: #84BF09;  
+  }
+  
+  .expressjs .skillbar-title {
+    background: #77a04b;  
+  }
+  
+  .expressjs .skillbar-bar {
+    background: #90CA51;  
+  }
+
+  .c .skillbar-title {
+    background:#137abb;  
+  }
+  
+  .c .skillbar-bar {
+    background: #0043fd;  
+  }
+
+  .cpp .skillbar-title {
+    background:#45a1da;  
+  }
+  
+  .cpp .skillbar-bar {
+    background: #4b6ecf;  
+  }
+
+  .java .skillbar-title {
+    background:#e62020;  
+  }
+  
+  .java .skillbar-bar {
+    background: #ff0000;  
+  }
+
+  .figma .skillbar-title {
+    background:#ff9100;  
+  }
+  
+  .figma .skillbar-bar {
+    background: #ff0055;  
+  }
+  
+  .mongo .skillbar-title {
+    background:#fbff00;  
+  }
+  
+  .mongo .skillbar-bar {
+    background: #d2e005;  
+  }
+  .reactjs .skillbar-title {
+    background:#00f7ff;  
+  }
+  
+  .reactjs .skillbar-bar {
+    background: #00c3ff;  
+  }
+  
+.right{
+    /* height: 100%; */
+    width: 48%;
+    background-color: transparent;
+    /* border: 1px solid white ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width:900px) {
+    .skill_block{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .left{
+      width: 95%;
+    }
+    .right{
+      width: 95%;
+    }
+    
+  }
+  footer>h3 {
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  
+  .span1 {
+    border-bottom: 1px solid #6001FF;
+  }
+  
+  .span2 {
+    color: #6001FF;
+  }
