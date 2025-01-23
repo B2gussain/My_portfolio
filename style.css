@@ -205,6 +205,7 @@ section {
   left: -2%;
   transform: rotate(-25deg);
   z-index: -0;
+  display: block;
 
 }
 
@@ -218,6 +219,8 @@ section {
   -ms-transform: rotate(-35deg);
   -o-transform: rotate(-35deg);
   z-index: -0;
+  display: block;
+
 }
 
 .svg3 {
@@ -230,6 +233,8 @@ section {
   -ms-transform: rotate(-30deg);
   -o-transform: rotate(-30deg);
   z-index: -0;
+  display: block;
+
 }
 
 .svg4 {
@@ -242,6 +247,8 @@ section {
   -ms-transform: rotate(30deg);
   -o-transform: rotate(30deg);
   z-index: -0;
+  display: block;
+
 }
 
 .svg5 {
@@ -254,6 +261,8 @@ section {
   -ms-transform: rotate(30deg);
   -o-transform: rotate(30deg);
   z-index: -0;
+  display: block;
+
 }
 
 .svg6 {
@@ -266,9 +275,14 @@ section {
   -ms-transform: rotate(30deg);
   -o-transform: rotate(30deg);
   z-index: -0;
+  display: block;
+
 }
 
 @media (max-width:810px) {
+  .svg1,.svg2,.svg3,.svg4,.svg5,.svg6{
+    display: none;
+  }
   #hs {
     left: -1000%
   }
@@ -510,7 +524,7 @@ section:hover {
 }
 
 /* Element styles */
-.marquee svg {
+.marquee .svg {
   display: grid;
   place-items: center;
   width: 6em;
@@ -527,7 +541,7 @@ section:hover {
   -webkit-filter: saturate(2);
 }
 
-.marquee svg:hover {
+.marquee .svg:hover {
   border: 1px solid white;
   border-radius: 1em;
   -webkit-border-radius: 1em;
