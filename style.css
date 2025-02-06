@@ -432,16 +432,16 @@ section:hover {
 }
 
 .projimg {
-  background-image: url(/images/gemmind.png);
+  background-image: url(/images/Ezystay.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   /* width: 80%; */
   aspect-ratio: 1.7;
   height: 70%;
   margin: 1em;
   margin-top: 3em;
-  border: 1px solid rgba(255, 255, 255, 0.356);
+  /* border: 1px solid rgba(255, 255, 255, 0.356); */
   border-radius: 1em;
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
@@ -816,17 +816,17 @@ ul {
   }
 
   .projimg {
-    background-image: url(/images/gemmind.png);
+    background-image: url(/images/Ezystay.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     /* width: 80%; */
     aspect-ratio: 1.7;
     height: 55%;
     margin: 1em;
     margin-top: 1em;
     margin-bottom: 3em;
-    border: 1px solid rgba(255, 255, 255, 0.356);
+    /* border: 1px solid rgba(255, 255, 255, 0.356); */
     border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
@@ -859,16 +859,16 @@ ul {
   }
 
   .projimg {
-    background-image: url(/images/gemmind.png);
+    background-image: url(/images/Ezystay.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     /* width: 80%; */
     aspect-ratio: 1.7;
     height: 60%;
     margin: 1em;
     margin-top: 3em;
-    border: 1px solid rgba(255, 255, 255, 0.356);
+    /* border: 1px solid rgba(255, 255, 255, 0.356); */
     border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
