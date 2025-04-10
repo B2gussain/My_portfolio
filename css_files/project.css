@@ -208,9 +208,13 @@ footer>h3 {
   list-style: none;
 }
 .proj_block li{
-  background-color: #6001FF;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #6001FF; */
   margin: 10px;
-  padding:5px 10px;
+  height: 50px;
+  width: 50px;
+  /* padding:5px 10px; */
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -274,4 +278,8 @@ footer>h3 {
   }
 
   
+}
+.li_img{
+  height: 100%;
+  width: 100%;
 }
